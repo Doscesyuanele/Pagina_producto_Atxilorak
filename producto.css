@@ -1,5 +1,7 @@
 html{
-    background-color:#eee;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4),rgba(255,255,255,0.4)),url(fotos/fondo.jpg);
+    background-size:cover;
+    background-attachment:fixed;
     font-family:Tahoma;
 }
 
@@ -63,6 +65,7 @@ html{
 }
 
 #form h1{
+    margin-top:100px;
     font-size:60px;
     color:#318391;
     text-transform: uppercase;
@@ -89,18 +92,13 @@ html{
 #How_it_Works{
     margin-top:50px;
     margin-bottom:60px;
+    padding-top:140px;
 }
 #icon-img{
     width:100px;
     max-height:100px;
     margin-right:40px;
     display:block;
-}
-
-@media (max-width:200px){
-    #How_it_works {
-        font-family:'Courier New', Courier, monospace;
-    }
 }
 
 #feature{
@@ -130,6 +128,7 @@ html{
 #Pricing div{
     border-style:groove;
     text-align:center;
+    background-color:#eef6f8;
     margin:20px;
     width:300px;
 }
@@ -143,6 +142,10 @@ html{
     padding-left:20px;
     padding-right:20px;
     font-weight: 200px;
+}
+#Pricing div h1, h2, p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #11505b;
 }
 
 #Pricing div button{
@@ -189,4 +192,86 @@ footer p{
     color:white;
     margin-bottom:30px;
     padding-right:20px;
+}
+
+
+@media screen and (max-width:900px){
+    html{
+        background-color:#eee;
+        font-family:Tahoma;
+        WIDTH:100%;
+        display: flex;
+    }
+
+    #nav-bar{
+        position:fixed;
+        z-index:1;
+        top:0px;
+        left:0px;
+        display:flex;
+        flex-direction: row;
+        background-color:#64a3ae;
+        width:100%;
+        justify-content: center;
+        margin:0;
+        padding:0;
+        justify-content:right;
+    }
+    
+    #nav-bar-link{
+        flex-direction:row;
+        display:flex;
+        justify-content: right;
+        z-index:10;
+        margin:20px;
+    }
+    #nav-bar-link a{
+        display:flex;
+        margin:0;
+        color:white;
+        font-size:15px;
+        text-decoration: none;
+        padding:12px;
+        align-items:center;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    #nav-bar-img{
+        padding:10px;
+        width:auto;
+        height:60px;
+        z-index:10;
+    }
+
+    
+    #form h1{
+        font-size:50px;
+        padding:10px;
+        margin-top:90px;
+    }
+
+    
+    #How_it_Works{
+        padding:15px;
+        padding-top:100px;
+    }
+
+    #icon-img{
+        width:40px;
+        height:40px;
+        margin-right:20px;
+        margin-top:15px;
+    }
+
+    #video{
+        width: 80%;
+        height:auto;
+        margin-bottom:80px;
+    }
+
+    #nav-footer{
+        padding:0;
+        margin:0;
+    }
 }
